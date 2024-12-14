@@ -1,0 +1,93 @@
+Explain the importance of comments in JavaScript and provide examples of single-line and
+multi-line comments.
+
+
+### **Importance of Comments in JavaScript**
+
+Comments are an essential part of any programming language, including JavaScript. They are used to add non-executable notes to the code, which serve several important purposes:
+
+1. **Code Documentation**:
+   - Comments help document the code, explaining its logic, functionality, and purpose. This makes it easier for other developers (or even yourself) to understand the code in the future.
+
+2. **Code Maintenance**:
+   - When debugging or maintaining code, comments can help explain why certain decisions were made or outline known issues or TODOs. This aids in keeping track of tasks that need attention.
+
+3. **Collaboration**:
+   - Comments improve communication among team members by providing context and explanations for complex sections of code. This reduces the time spent on understanding each other's code.
+
+4. **Disabling Code Temporarily**:
+   - You can use comments to temporarily disable certain lines of code during debugging or testing without deleting them.
+
+5. **Improving Readability**:
+   - Well-commented code is often easier to follow and reduces cognitive load, especially for complex algorithms or logic.
+
+### **Types of Comments in JavaScript**
+
+JavaScript supports two types of comments:
+
+1. **Single-line Comments**:
+   - Single-line comments are used to explain or annotate a single line of code. They begin with `//`.
+   
+2. **Multi-line Comments**:
+   - Multi-line comments are used for commenting out blocks of code or longer explanations. They begin with `/*` and end with `*/`.
+
+### **Examples of Comments**:
+
+#### 1. **Single-line Comments**:
+
+A **single-line comment** begins with `//` and extends to the end of the line.
+
+**Example**:
+```javascript
+// This is a single-line comment
+
+let x = 5;  // This is an inline comment next to a line of code
+```
+
+#### 2. **Multi-line Comments**:
+
+A **multi-line comment** begins with `/*` and ends with `*/`. You can span these comments across multiple lines.
+
+**Example**:
+```javascript
+/* This is a multi-line comment.
+   It can span multiple lines, and it is useful for longer explanations.
+   It will be ignored by the JavaScript engine. */
+   
+let y = 10;
+```
+
+**Example of Disabling Code Temporarily**:
+```javascript
+/*
+let result = x + y;   // temporarily disabled code
+console.log(result);
+*/
+```
+
+### **Best Practices for Comments**:
+
+1. **Use Comments to Explain "Why"**: 
+   - Instead of explaining "what" the code does (which should be obvious from the code itself), focus on explaining "why" a certain approach was taken.
+   
+   **Example**:
+   ```javascript
+   // Using a while loop here to ensure we only iterate while the condition is true
+   while (x < 10) {
+       x++;
+   }
+   ```
+
+2. **Keep Comments Up to Date**: 
+   - Ensure that comments reflect the current state of the code. Outdated comments can be confusing and misleading.
+
+3. **Avoid Over-commenting**: 
+   - Avoid commenting every line of code, especially when the code is self-explanatory. Over-commenting can clutter the code and reduce readability.
+   
+4. **Use TODO Comments**: 
+   - You can leave comments to indicate areas of the code that need attention in the future, like unimplemented features or known bugs.
+   
+   **Example**:
+   ```javascript
+   // TODO: Refactor this function for better performance
+   ```

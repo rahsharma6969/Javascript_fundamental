@@ -1,0 +1,23 @@
+Explain the key differences between JavaScript and HTML. Provide examples of situations where
+you would use each.
+
+
+
+
+| **Aspect**               | **HTML**                                      | **JavaScript**                                    |
+|--------------------------|-----------------------------------------------|--------------------------------------------------|
+| **Type**                 | Markup Language                               | Programming Language                             |
+| **Purpose**              | Defines the structure and content of a webpage | Adds interactivity and functionality to a webpage |
+| **Role in Web Development** | Creates the basic structure and layout (static) | Controls dynamic behavior and interactivity      |
+| **Used For**             | Organizing and displaying content (text, images, links) | Handling events, animations, and dynamic updates |
+| **Example File Extension** | `.html`                                      | `.js`                                             |
+| **Example Code**         | `<h1>Welcome to My Website</h1>`               | `alert("Welcome!");`                             |
+| **Execution**            | Rendered by the browser (static content)       | Executed by the browser’s JavaScript engine (dynamic behavior) |
+| **Language Type**        | Static (markup)                               | Dynamic (scripting)                              |
+| **Content**              | Defines content (e.g., text, images, links)   | Defines behavior (e.g., onclick events, dynamic content) |
+| **Interaction**          | No interactivity or dynamic content           | Allows user interaction (e.g., click events, form validation) |
+| **Use in Web Page**      | Creating headings, paragraphs, forms, etc.    | Validating forms, updating content dynamically, handling user actions |
+| **Example 1**            | `<img src="image.jpg" alt="Image">`           | `document.getElementById("changeColor").style.backgroundColor = "blue";` |
+| **Example 2**            | `<form><input type="text"></form>`            | `document.getElementById("submit").addEventListener("click", function(){})` |
+| **Output**               | Produces the structure and layout of the page | Provides dynamic interactions like alerts, changes in content, etc. |
+

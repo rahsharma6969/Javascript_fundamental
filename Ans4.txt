@@ -1,0 +1,68 @@
+What is the purpose of declaring variables in JavaScript, and how do you declare them using the
+'let' keyword?
+
+### **Purpose of Declaring Variables in JavaScript**
+
+In JavaScript, **declaring variables** is crucial for storing and manipulating data. A **variable** is essentially a container for data that can change over time. By declaring variables, you:
+
+1. **Store Data**: Variables allow you to store values (e.g., numbers, strings, objects) and refer to them later in the program.
+   
+2. **Control Program Flow**: Variables help manage the state of your program, enabling dynamic behavior, such as handling user input, performing calculations, or toggling flags.
+   
+3. **Improve Code Readability**: Declaring variables with meaningful names makes your code more readable and maintainable.
+
+4. **Avoid Errors**: Declaring variables before using them ensures that the program doesn't refer to undefined data, reducing runtime errors.
+
+### **Declaring Variables Using the `let` Keyword**
+
+In JavaScript, the `let` keyword is used to declare **block-scoped** variables, meaning they are only accessible within the block (enclosed by `{}`) where they are declared. It was introduced in ES6 (ECMAScript 2015) to replace the older `var` keyword, providing better scoping rules.
+
+#### **Syntax**:
+```javascript
+let variableName = value;
+```
+
+- **`let`**: The keyword used to declare the variable.
+- **`variableName`**: The name of the variable.
+- **`value`**: The initial value you want to assign to the variable (this is optional).
+
+### **Example**:
+
+```javascript
+let age = 25;               // Declaring and initializing a variable 'age' with value 25
+let name = "Alice";         // Declaring and initializing a variable 'name' with value "Alice"
+let isActive = true;        // Declaring and initializing a variable 'isActive' with boolean value 'true'
+```
+
+#### **Key Points about `let`**:
+1. **Block-scoped**: Variables declared with `let` are scoped to the block in which they are declared, unlike `var`, which is function-scoped.
+   
+   **Example**:
+   ```javascript
+   if (true) {
+       let x = 10;  // 'x' is only accessible inside this block
+   }
+   console.log(x);  // Error: x is not defined outside the block
+   ```
+
+2. **Reassignable**: Unlike `const` (which cannot be reassigned), variables declared with `let` can be reassigned.
+
+   **Example**:
+   ```javascript
+   let score = 100;
+   score = 200;  // Reassigning 'score' to a new value
+   console.log(score);  // Outputs: 200
+   ```
+
+3. **Hoisting**: Variables declared with `let` are hoisted to the top of their block scope, but they are **not initialized** until the execution reaches the declaration. This means accessing the variable before its declaration results in a `ReferenceError`.
+
+   **Example**:
+   ```javascript
+   console.log(x);  // Error: Cannot access 'x' before initialization
+   let x = 5;
+   ```
+
+### **When to Use `let`**:
+- Use `let` when you expect to reassign the value of a variable.
+- Prefer `let` over `var` for better scoping and to avoid potential bugs related to variable hoisting and scoping issues with `var`.
+

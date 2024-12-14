@@ -1,0 +1,46 @@
+List and describe the five primitive data types in JavaScript.
+
+In JavaScript, there are **five primitive data types** that represent the basic building blocks of the language. These data types are **immutable**, meaning their values cannot be changed directly once they are assigned. Below are the five primitive data types:
+
+### **1. Number**
+   - **Description**: Represents numeric values, both integers and floating-point numbers (decimals). JavaScript does not distinguish between different types of numbers, meaning both integers and floating-point numbers are of the same `Number` type.
+   - **Example**:
+     ```javascript
+     let age = 30;         // Integer
+     let price = 19.99;    // Floating-point number
+     ```
+
+### **2. String**
+   - **Description**: Represents a sequence of characters (text). Strings in JavaScript are enclosed in either single quotes (`'`), double quotes (`"`), or backticks (`` ` `` for template literals).
+   - **Example**:
+     ```javascript
+     let name = "Alice";      // Using double quotes
+     let greeting = 'Hello';  // Using single quotes
+     let message = `Hi, ${name}!`;  // Using backticks (template literals)
+     ```
+
+### **3. Boolean**
+   - **Description**: Represents a logical value, which can only be either `true` or `false`. Booleans are commonly used in conditional statements (e.g., `if` conditions).
+   - **Example**:
+     ```javascript
+     let isActive = true;   // Boolean true
+     let isComplete = false; // Boolean false
+     ```
+
+### **4. Undefined**
+   - **Description**: Represents a variable that has been declared but not assigned a value. By default, when a variable is declared but not initialized, its value is `undefined`.
+   - **Example**:
+     ```javascript
+     let x;    // x is declared but not assigned a value
+     console.log(x);  // Outputs: undefined
+     ```
+
+### **5. Null**
+   - **Description**: Represents the intentional absence of any object value. It is a special value that is explicitly assigned to indicate "no value" or "empty."
+   - **Example**:
+     ```javascript
+     let user = null;  // Null represents no value or absence of an object
+     ```
+
+            |
+
